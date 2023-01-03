@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ссылки</title>
+
+        <!-- 
+            a:visited уже был осуществлен переход
+            a:hover навели указатель мыши
+            a:active в нажатом состоянии
+         -->
+        <style>
+            a:link    {color:blue; text-decoration:none}
+            a:visited {color:pink; text-decoration:none}
+            a:hover   {color:red; text-decoration:underline}
+            a:active  {color:yellow; text-decoration:underline}
+        </style>
+    </head>
+    <body>
+
+        <!-- 
+            href: определяет адрес ссылки
+            hreflang: указывает на язык документа, на который ведет данная ссылка
+            media: определяет устройство, для которого предназначена ссылка
+            rel: определяет отношение между данным документом и ресурсом, на который ведет ссылка
+            target: определяет, как документ по ссылке должен открываться
+                _blank: открытие html-документа в новом окне или вкладке браузера
+                _self: открытие html-документа в том же фрейме (или окне)
+                _parent: открытие документа в родительском фрейме, если ссылка расположена во внутреннем фрейме
+                _top: открытие html-документа на все окно браузера
+                framename: открытие html-документа во фрейме, который называется framename (В данном случае framename - только пример, название фрейма может быть произвольным)
+            type: указывает на mime-тип ресурса по ссылке
+            title: Добавляет всплывающую подсказку к тексту ссылки.
+         -->
+
+        <!-- Local path -->
+        <a href="01_begin.html">Учебник по HTML5</a>
+
+        <!-- Absolute path -->
+        <a href="http://metanit.com/web/html5/">Учебник по HTML5</a>
+
+        <div>
+            <h3>Навигация внутри документа</h3>
+
+            <a href="#paragraph1">Параграф 1</a> | <a href="#paragraph2">Параграф 2</a> | <a href="#paragraph3">Параграф 3</a>
+            <h2 id="paragraph1">Параграф 1</h2>
+            <p>Содержание параграфа 1</p>
+            <h2 id="paragraph2">Параграф 2</h2>
+            <p>Содержание параграфа 2</p>
+            <h2 id="paragraph3">Параграф 3</h2>
+            <p>Содержание параграфа 3</p>
+        </div>
+
+        <div>
+            <h3>Ссылка-картинка</h3>
+
+            <a href="01_begin.html">
+                <img src="winter.jpg" alt="HTML tutorial">
+            </a>
+        </div>
+
+    </body>
+</html>
