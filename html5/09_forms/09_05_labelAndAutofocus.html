@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Label в HTML5</title>
+    </head>
+    <body>
+        <form>
+            <p>
+                <!-- 
+                    label. Метки создают аннотацию или заголовок к полю ввода, указывают, для чего это поле предназначено.
+                    Для связи с полем ввода метка имеет атрибут for, который указывает на id поля ввода
+                 -->
+                <label for="login">Логин: </label>
+                <input type="text" id="login" name="login" />
+            </p>
+            <p>
+                <!-- 
+                    autofocus
+                 -->
+                <label for="password">Пароль: </label>
+                <input autofocus type="password" id="password" name="password" />
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+    </body>
+</html>
