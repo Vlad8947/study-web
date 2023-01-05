@@ -1,0 +1,50 @@
+/* 
+    Universal selector for all elements
+    *{      
+        background-color: red;
+    }
+*/
+
+div{
+    width:50px; /* ширина */
+    height:50px; /* высота */
+    background-color:red; /* цвет фона */
+    margin: 10px; /* отступ от других элементов */
+}
+
+/* 
+Class */
+.redBlock{
+    background-color:red;
+}
+.blueBlock{
+    background-color: blue;
+}
+.border {
+    margin: 10px;
+    border: 1px solid #222;
+}
+
+/* 
+Identifiers */
+#header{
+    height: 80px;
+    background-color: #ccc;
+}
+#content{
+    height: 180px;
+    background-color: #eee;
+}
+#footer{
+    height: 80px;
+    background-color: #ccc;
+}
+
+/* 
+Group */
+h1, #header, .redBlock {            
+    color: red;
+}
+h1, h2, h3, h4 {       
+    color: red;
+}
